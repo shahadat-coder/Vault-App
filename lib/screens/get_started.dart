@@ -179,6 +179,8 @@ Vault App reserves the right to terminate user accounts for conduct violating th
                     }, child: const Text('Continue',style: TextStyle(
                   color: AppColors.primaryColors
                   ))),
+
+
                   ]
                 );
                 },),
