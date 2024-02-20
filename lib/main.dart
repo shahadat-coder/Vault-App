@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vault_app/bindings/all_bindings.dart';
 import 'package:flutter_vault_app/utils/colors.dart';
 import 'package:get/get.dart';
 import 'screens/splash_page.dart';
 import 'utils/config.dart';
 
 void main() {
+  AllBindings().dependencies();
   runApp(const MyApp());
 }
 

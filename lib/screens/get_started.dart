@@ -90,100 +90,94 @@ Vault App reserves the right to terminate user accounts for conduct violating th
                   ),
                 ),
               ),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: RichText(text: const TextSpan(
-                text: 'By Continuing to use ${AppConfig.appName}, you agree to our ',
-                style: TextStyle(
-                  color: Colors.black
-                ),
-                children: [
-                  TextSpan(
-                    text: 'Privacy Policy',
-                    style: TextStyle(
-                      color: AppColors.primaryColors,
-                      fontWeight: FontWeight.w800
-                    )
-                  ),
-                  TextSpan(
-                    text: ' and ',
-                    style: TextStyle(
-                        color: Colors.black
-                    ),
-                  ),
-                  TextSpan(
-                      text: 'Terms of Service',
-                      style: TextStyle(
-                          color: AppColors.primaryColors,
-                          fontWeight: FontWeight.w800
-                      )
-                  ),
-                ]
-              ),
-              ),
-            ),
-              const SizedBox(height: 15,),
-               CustomButton(title: 'Agree & Continue',
-                onTap: (){
-                  Get.offAll(const CalculatorScreen());
-                },),
-              const SizedBox(height: 10,),
-              CustomButton(title: 'Disagree',
-                titleColor: AppColors.secondaryColors,
-                backgroundColor: Colors.transparent,
-                onTap: (){
-                Get.defaultDialog(
-                  backgroundColor: Colors.white,
-                  title: "If disagree, you will not able to use ${AppConfig.appName}",
-                  titleStyle: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold
-                  ),
-                  content: RichText(text: const TextSpan(
-                      text: 'By Continuing to use ${AppConfig.appName}, you agree to our ',
-                      style: TextStyle(
-                          color: Colors.black
-                      ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: RichText(
+                  text: const TextSpan(
+                      text:
+                          'By Continuing to use ${AppConfig.appName}, you agree to our ',
+                      style: TextStyle(color: Colors.black),
                       children: [
                         TextSpan(
                             text: 'Privacy Policy',
                             style: TextStyle(
                                 color: AppColors.primaryColors,
-                                fontWeight: FontWeight.w800
-                            )
-                        ),
+                                fontWeight: FontWeight.w800)),
                         TextSpan(
                           text: ' and ',
-                          style: TextStyle(
-                              color: Colors.black
-                          ),
+                          style: TextStyle(color: Colors.black),
                         ),
                         TextSpan(
                             text: 'Terms of Service',
                             style: TextStyle(
                                 color: AppColors.primaryColors,
-                                fontWeight: FontWeight.w800
-                            )
-                        ),
-                      ]
-                  ),
-                  ),
-                  actions: [
-                    TextButton(onPressed: (){
-                      SystemNavigator.pop();
-                    }, child: const Text('Quit',style: TextStyle(
-                      color: AppColors.secondaryColors
-                    ))),
-                    TextButton(onPressed: (){
-                      Get.offAll(const CalculatorScreen());
-                    }, child: const Text('Continue',style: TextStyle(
-                  color: AppColors.primaryColors
-                  ))),
-
-
-                  ]
-                );
-                },),
+                                fontWeight: FontWeight.w800)),
+                      ]),
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              CustomButton(
+                title: 'Agree & Continue',
+                onTap: () {
+                  Get.offAll(const CalculatorScreen());
+                },
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              CustomButton(
+                title: 'Disagree',
+                titleColor: AppColors.secondaryColors,
+                backgroundColor: Colors.transparent,
+                onTap: () {
+                  Get.defaultDialog(
+                      backgroundColor: Colors.white,
+                      title:
+                          "If disagree, you will not able to use ${AppConfig.appName}",
+                      titleStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
+                      content: RichText(
+                        text: const TextSpan(
+                            text:
+                                'By Continuing to use ${AppConfig.appName}, you agree to our ',
+                            style: TextStyle(color: Colors.black),
+                            children: [
+                              TextSpan(
+                                  text: 'Privacy Policy',
+                                  style: TextStyle(
+                                      color: AppColors.primaryColors,
+                                      fontWeight: FontWeight.w800)),
+                              TextSpan(
+                                text: ' and ',
+                                style: TextStyle(color: Colors.black),
+                              ),
+                              TextSpan(
+                                  text: 'Terms of Service',
+                                  style: TextStyle(
+                                      color: AppColors.primaryColors,
+                                      fontWeight: FontWeight.w800)),
+                            ]),
+                      ),
+                      actions: [
+                        TextButton(
+                            onPressed: () {
+                              SystemNavigator.pop();
+                            },
+                            child: const Text('Quit',
+                                style: TextStyle(
+                                    color: AppColors.secondaryColors))),
+                        TextButton(
+                            onPressed: () {
+                              Get.offAll(const CalculatorScreen());
+                            },
+                            child: const Text('Continue',
+                                style:
+                                    TextStyle(color: AppColors.primaryColors))),
+                      ]);
+                },
+              ),
             ],
           ),
         ),
@@ -191,4 +185,3 @@ Vault App reserves the right to terminate user accounts for conduct violating th
     );
   }
 }
-
