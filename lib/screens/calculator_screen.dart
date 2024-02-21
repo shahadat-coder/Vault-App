@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vault_app/controllers/calculator_controller.dart';
-import 'package:flutter_vault_app/utils/colors.dart';
 import 'package:flutter_vault_app/widgets/custom_appBar.dart';
 import 'package:flutter_vault_app/widgets/methods/calculator_mathod.dart';
 import 'package:get/get.dart';

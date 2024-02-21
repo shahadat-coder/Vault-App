@@ -1,8 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_vault_app/controllers/app_controller.dart';
-import 'package:flutter_vault_app/screens/get_started.dart';
 import 'package:flutter_vault_app/utils/colors.dart';
 import 'package:flutter_vault_app/utils/config.dart';
 import 'package:get/get.dart';

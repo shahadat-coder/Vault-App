@@ -19,7 +19,6 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
   
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     SharedServices().setData(SetType.bool, SharedKeys.alreadyOpened, true);
   }
