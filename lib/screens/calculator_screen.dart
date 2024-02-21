@@ -16,11 +16,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(),
+      appBar: const CustomAppBar(),
       body: GetBuilder<CalculatorController>(
         builder: (controller){
           return Padding(
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             child: Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,14 +38,14 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(controller.userInput.value,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black,
                               fontSize: 35,
                               fontWeight: FontWeight.w800,
                             ),
                           ),
                           Text(controller.result.value,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black,
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
@@ -59,7 +59,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                       shrinkWrap: true,
                       primary: false,
                       itemCount: controller.buttons.length,
-                      gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate:  const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
                         mainAxisSpacing: 15,
                         crossAxisSpacing: 15,

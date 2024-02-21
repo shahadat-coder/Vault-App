@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_vault_app/controllers/app_controller.dart';
 import 'package:flutter_vault_app/screens/get_started.dart';
 import 'package:flutter_vault_app/utils/colors.dart';
 import 'package:flutter_vault_app/utils/config.dart';
@@ -14,11 +15,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+
+  final appController = Get.put(AppController());
+
   @override
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 5), () {
-      Get.to(const GetStartedScreen());
+      appController.checkAppState();
     });
   }
   @override
