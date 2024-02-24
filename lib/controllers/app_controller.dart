@@ -3,7 +3,6 @@ import 'package:flutter_vault_app/screens/calculator_screen.dart';
 import 'package:flutter_vault_app/screens/get_started.dart';
 import 'package:flutter_vault_app/utils/keys.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
 class AppController extends GetxController {
   final sharedServices = SharedServices();
